@@ -1,0 +1,30 @@
+%Develop a latex script to design a simple tree diagramor hierarchical structure in the document with appropriate labels using Tikz library
+
+\documentclass{article}
+\usepackage{tikz}
+
+\begin{document}
+    \centering
+    \tikzstyle{level 1}=[level distance=4cm,sibling distance=6cm]
+    \tikzstyle{level 1}=[level distance=4cm,sibling distance=3cm]
+
+    \begin{tikzpicture}[grow=down,sloped]
+        \node{Root}
+        child{
+            node{Child 1}
+            child{
+                node{Subchild 1}
+            }
+            child{
+                node{Subchild 2}
+            }
+        }
+        %second child
+        child{
+            node{Child 2}
+            child{
+                node {Subchild 1}
+            }
+        };
+    \end{tikzpicture}
+\end{document}
