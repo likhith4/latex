@@ -1,0 +1,415 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{ragged2e}
+\usepackage{color}
+\usepackage{biblatex}
+\usepackage{tabularx}
+\usepackage{enumitem}
+
+\addbibresource{reference.bib}
+
+\geometry{
+a4paper,
+total={210mm,297mm},
+left=1.15in,
+right=0.85in,
+top=1.0in,
+bottom=1.0in,
+}
+
+\begin{document}
+
+\pagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%% Front Page  %%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+{\large \textbf{Visvesvaraya Technological University, Belagavi – 590018}}
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=2.3cm,height=3cm]{vtu.png}
+\end{figure}
+
+\textbf{ MINI PROJECT REPORT}
+\par
+\textbf{ON}
+\par
+\vspace{6pt}
+{\Large \textbf{Project Title 
+}}
+\par
+\vspace{12pt}
+\par
+
+\vspace{12pt}
+\textit{\textbf{Submitted by}}
+
+\begin{center}
+\begin{tabular}{l@{\hspace{2cm}}r}
+\textbf{\large Name  } & \textbf{USN} \\
+
+\end{tabular}
+\end{center}
+
+\vspace{12pt}
+\textit{\textbf{Under the Guidance of}}
+\par
+\vspace{5pt}
+\textbf{Mr Hemachandra}
+\par
+\vspace{1pt}
+\normalsize { Assistant Professor, Department of CSE }
+\par
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.5]{MMCT_Logo.png}
+\end{figure}
+\large \textbf{DEPT. OF COMPUTER SCIENCE ENGINEERING}
+\par \textbf{MANGALORE MARINE COLLEGE AND TECHNOLOGY}
+\par 
+
+\par
+{\large{(Affiliated to VTU Belagavi, Recognized by AICTE)}}
+\par
+{\large \textbf{Kuppepadavu,Mangaluru-574144, Karnataka}}
+\par 
+{\Large \textbf{2024-25}}
+\end{center}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%% Certificate Page %%%%%%%%%%%%%%%
+\begin{center}
+\thispagestyle{empty}
+\large \textbf{MANGALORE MARINE COLLEGE AND TECHNOLOGY}
+\par
+\par \large{(Affiliated to VTU Belagavi, Recognized by AICTE)}
+\par \vspace{3pt}
+\large \textbf{Kuppepadvu, Mangaluru - 574144, Karnataka}
+\par \vspace{12pt}  
+\par
+\large \textbf{DEPT. OF COMPUTER SCIENCE ENGINEERING}
+\par
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.5]{MMCT_Logo.png}
+\end{figure}
+
+
+{\Large \textbf{CERTIFICATE}}
+\end{center}
+\justifying
+\par
+\setstretch{1.2}
+\noindent 
+This is to certify that the Mini project entitled \textbf{"PROJECT TITLE"
+}  is a bonafide work carried out by\vspace{2pt} 
+\par
+\noindent 
+\begin{center}
+\begin{tabular}{l@{\hspace{2cm}}r}
+\textbf{\large Name} & \textbf{USN} \\
+\end{tabular}
+\end{center}
+\noindent
+Students of fifth semester B.E. Computer Science \& Engineering, and submitted as a part of the course Mini Project (BCS586), during the academic year 2024-2025.
+
+\par
+\vspace{0.55in}
+\setstretch{1.15}
+
+\begin{tabularx}{0.95\textwidth}{ 
+   >{\raggedright\arraybackslash}X 
+   >{\centering\arraybackslash}X 
+   >{\raggedleft\arraybackslash}X }
+     \textbf{Mr Hemachandra} & \textbf{Mr Sarvesh R Nayak} & \textbf{Dr Mahendra M.D} \\
+     \centering Project Guide & \centering HOD-CSE & \centering Principal \\
+\end{tabularx}
+
+
+
+\hspace{7.5cm}
+
+\begin{flushleft}
+\begin{normalsize}Examiner's Name \end{normalsize}
+\hspace{7.5cm}
+\begin{normalsize}Signature with Date\end{normalsize}
+\end{flushleft}
+
+
+\begin{flushleft}
+1. \ldots\ldots\ldots\ldots\ldots\ldots \ldots \hspace{6.8cm}\ldots\ldots\ldots\ldots \ldots\ldots\ldots 
+\par
+\vspace{0.2in}	
+2. \ldots\ldots\ldots\ldots\ldots\ldots \ldots \hspace{6.8cm}\ldots\ldots\ldots\ldots \ldots\ldots\ldots 
+\end{flushleft}
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Acknowledgement %%%%%%%%%%%%%%%
+\newpage
+\setstretch{1.1}
+\pagenumbering{roman}
+\chapter*{Acknowledgement}
+\addcontentsline{toc}{chapter}{\numberline{}Acknowledgement}
+We dedicate this page to acknowledge and thank those responsible for the shaping of the project. Without their guidance and help, the experience while constructing the dissertation would not have been so smooth and efficient.
+\par
+\vspace{0.22in}
+\noindent We sincerely thank our Project Guide \textbf{Mr Hemachandra}, Assistant Professor, Department of CSE, for her guidance and valuable suggestions that helped us complete this project.
+\par
+\vspace{0.22in}
+\noindent We owe a profound gratitude to \textbf{ Mr Sarvesh R Nayak }, Head of the Department, Computer Science and Engineering, whose kind support and guidance helped us to complete this work successfully.
+\par
+\vspace{0.22in}
+\noindent We are extremely thankful to our Principal, \textbf{Dr Mahendra Motilal Dhongadi}, for his valuable guidance and encouragement throughout the project.
+\par
+\vspace{0.22in}
+\par
+\vspace{0.22in}
+\noindent We also extend our gratitude to our friends and family members for their continuous support.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Abstract %%%%%%%%%%%%%%%
+
+\pagestyle{plain}
+\setstretch{1.5}
+\pagenumbering{roman}
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{\numberline{}Abstract}
+In the context of single-image depth estimation, researchers aim to estimate the depth of
+a scene from a 2D image, a challenging task due to inherent ambiguities. They use deep
+convolutional networks (ConvNets) to understand pixel relationships and incorporate global
+scene context. An adaptable loss function such as L1 and SSIM helps generate realistic,
+coherent depth maps[3].\\
+To train deep ConvNets, large datasets with depth information are preferred but often
+difficult to obtain. Some approaches involve novel viewpoint generation from stereo imagery,
+indirectly inferring depth.\\
+Past research primarily used photometric and geometric loss functions defined per pixel,
+potentially neglecting global scene context[1]. Researchers now investigate the impact of
+various combinations of these loss functions to enhance stereo depth estimation model
+performance. \\
+
+\newpage
+
+
+
+\setstretch{1.2}
+\renewcommand{\contentsname}{Table of Contents}
+\addcontentsline{toc}{chapter}{\numberline{}Table of Contents}
+\tableofcontents
+\listoffigures
+\addcontentsline{toc}{chapter}{\numberline{}List of Figures}
+\listoftables
+\addcontentsline{toc}{chapter}{\numberline{}List of Tables}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%% Headders and Footers %%%%%%%%%%%%%%%
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\fontsize{9}{10.8}\selectfont PROJECT TITLE}
+\rhead{\fontsize{10}{12} \selectfont Chapter \thechapter}
+\lfoot{\fontsize{10}{12} \selectfont Department of Computer Science and Engineering, MMCT}
+\rfoot{\fontsize{10}{12} \selectfont Page \thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%% CHapetr 1 Introduction %%%%%%%%%%%%%
+
+\setstretch{1.2}
+\pagenumbering{arabic}
+
+\chapter{Introduction}
+\par
+
+\section{Problem statement }
+Given a left stereo image as input, the task is to predict and generate the corresponding
+right stereo image.Conversely, given a right stereo image as input, the aim is to predict and
+generate the corresponding left stereo image.
+Given a pair of stereo images (comprising both left and right views), the goal is to
+estimate and produce the depth map for various input stereo images.
+
+
+
+\section{Scope and Importance}
+The scope of this project involves enhancing depth estimation from stereo image pairs
+through the use of diverse loss functions, and normalization techniques to achieve state-of-the-art results.
+
+\subsection*{ scope}
+Through our project, we aim to discover the various areas where our solution can be useful. These include:
+\begin{itemize}
+    \item \textbf{Autonomous Driving:} Depth estimation helps autonomous vehicles perceive their environment, enabling better navigation and obstacle avoidance.
+      
+    \item \textbf{Robotics:} Depth estimation aids robots in tasks like object manipulation, path planning, and navigation.
+       
+    \item \textbf{Security and Surveillance:} It helps in tracking and identifying objects and individuals in surveillance footage.
+    
+    \item \textbf{Drones and Aerial Imaging:}  Drones utilize depth estimation for mapping, surveying, and search and rescue operations
+\end{itemize}
+\subsection*{ Importance}
+Through our project, we aim to discover the various areas where our solution can be useful. These include:
+\begin{itemize}
+    \item \textbf{Autonomous Driving:} Depth estimation helps autonomous vehicles perceive their environment, enabling better navigation and obstacle avoidance.
+      
+    \item \textbf{Robotics:} Depth estimation aids robots in tasks like object manipulation, path planning, and navigation.
+       
+    \item \textbf{Security and Surveillance:} It helps in tracking and identifying objects and individuals in surveillance footage.
+    
+    \item \textbf{Drones and Aerial Imaging:}  Drones utilize depth estimation for mapping, surveying, and search and rescue operations
+\end{itemize}
+%---------------------------- Chapter TWO --------------------------
+
+\chapter{Software Requirement Specification}
+
+
+\section{Functional Requirement}
+
+\begin{itemize}
+    \item \textbf{User account creation:}User account created
+    
+\end{itemize}
+
+
+\section{Software Requirement }
+
+\begin{itemize}
+    \item \textbf{User account creation:}User account created
+    
+\end{itemize}
+
+ 
+\section{Hardware Requirement}
+
+\begin{itemize}
+    \item \textbf{User account creation:}User account created
+    
+\end{itemize}
+
+ 
+
+\newpage
+\chapter{System Design}
+\section{ER diagram}
+\begin{figure}[htp]
+\centering
+    \includegraphics[width=6in,height=5in]{33.jpeg}
+  \caption{ER diagram}
+  \label{figa2}
+\end{figure}
+
+\newpage
+
+\section{Schema Diagram}
+\begin{figure}[htp]
+\centering
+    \includegraphics[width=6in,height=7in]{33.jpeg}
+  \caption{Schema  diagram}
+  \label{figa2}
+\end{figure}
+\newpage
+\section{Table Description}
+
+\begin{table}[ht]
+\centering
+\caption{Customer Information}
+\begin{tabular}{|c|l|l|l|}
+\hline
+\textbf{Customer ID} & \textbf{Name}         & \textbf{Email}              & \textbf{Phone Number} \\ \hline
+1                    & John Doe              & john.doe@example.com        & 123-456-7890          \\ \hline
+2                    & Jane Smith            & jane.smith@example.com      & 987-654-3210          \\ \hline
+3                    & Alice Johnson         & alice.johnson@example.com   & 555-123-4567          \\ \hline
+4                    & Bob Brown             & bob.brown@example.com       & 444-567-8901          \\ \hline
+5                    & Charlie Davis         & charlie.davis@example.com   & 333-890-1234          \\ \hline
+\end{tabular}
+\end{table}
+
+\newpage
+\chapter{Screenshots}
+\section{Admin login page}
+
+
+
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=5in,height=3in]{11.jpeg}
+  \caption{Home Page for uploading an image}
+  \label{figa1}
+\end{figure}
+
+\begin{figure}[htp]
+\centering
+    \includegraphics[width=5in,height=2.5in]{22.jpeg}
+  \caption{Generated corresponding opposite stereo image }
+  \label{figa2}
+\end{figure}
+
+\begin{figure}[htp]
+\centering
+    \includegraphics[width=5in,height=3in]{33.jpeg}
+  \caption{Matching points on left stereo image}
+  \label{figa2}
+\end{figure}
+
+\begin{figure}[htp]
+\centering
+    \includegraphics[width=5in,height=3in]{44.jpeg}
+  \caption{Matching points on right stereo image}
+  \label{figa2}
+\end{figure}
+
+\begin{figure}[htp]
+\centering
+    \includegraphics[width=5in,height=3in]{55.jpeg}
+  \caption{Combined Depth Map}
+  \label{figa2}
+\end{figure}
+
+\begin{figure}[htp]
+\centering
+    \includegraphics[width=5in,height=3in]{66.jpeg}
+  \caption{Final Depth Map}
+  \label{figa2}
+\end{figure}
+
+
+
+\newpage
+\chapter{Conclusion and Future Scope}
+\section{Conclusion}
+
+In conclusion, the depth estimation project utilizing novel view synthesis offers a comprehensive solution for reconstructing stereo images and inferring depth information from a single input image. By employing techniques such as scaling, normalization, and loss function optimization, alongside consistency and smoothness constraints, the algorithm effectively reconstructs stereo views with high fidelity. The utilization of L1 Loss and SSIM Loss ensures accurate reconstruction, while the incorporation of Left-Right Consistency Loss and Disparity Smoothness Loss enhances spatial coherence and perceptual quality. Through extensive model training and validation, the project achieves robust depth estimation capabilities, enabling accurate distance inference for objects in various scenes. This approach holds significant promise for applications in 3D reconstruction, augmented reality, and autonomous systems, ultimately contributing to advancements in computer vision and depth perception technologies.
+
+
+\section{Future Work}
+In the realm of depth estimation using novel view synthesis, future research holds significant promise for advancing the field. Exploration of advanced model architectures, such as attention mechanisms and graph convolutional networks, could enhance accuracy and efficiency. Additionally, integration of multi-modal data sources and adversarial training techniques may enrich depth estimation by improving realism and generalization. Domain adaptation methods could enable models to generalize across diverse environments, while optimization for real-time deployment on edge devices could broaden accessibility. Furthermore, expanding applications into domains like robotics, autonomous vehicles, and medical imaging could unlock new avenues for innovation and impact. By pursuing these avenues, future research aims to propel depth estimation technology to new heights, enabling more robust, accurate, and versatile solutions with widespread real-world applicability.
+
+\newpage
+\renewcommand{\bibname}{References}
+
+\begin{thebibliography}{99}
+
+\bibitem{1}
+Watson, J., Aodha, O., Turmukhambetov, D., Brostow, G. \& Firman, M.Generating stereo image data from monocular image. {\em CoRR}. {abs/2008.01484} (2020), https://arxiv.org/abs/2008.01484
+
+
+\bibitem{2}
+Garg et al,
+\textit{Unsupervised CNN for Single View Depth Estimation: Geometry to the Rescu [online], published Mar 2016, arXis:1603.04992}
+
+\bibitem{3}
+Cao, A., Rockwell, C., Johnson, J. (2022).
+\textit{ FWD: Real-time Novel View Synthesis with Forward Warping and Depth. CVPR.}
+
+\bibitem{4}
+Yan, Z., Ren, L., Li, Y., Duan, Y. (2022).
+\textit{ Two-Stage Depth Estimation Machine Learning Algorithm and Spherical Warping Layer for Equi-Rectangular Projection Stereo Matching (Patent No. 11810311).}
+
+\end{thebibliography}
+\end{document}
