@@ -1,0 +1,124 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\geometry{a4paper, margin=1in}
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+
+\title{Seminar Report: Algorithms for Planning as a State Space Search}
+\author{Likhith K.}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Overview}
+The seminar focused on AI planning algorithms, exploring state space search techniques in artificial intelligence. The presentation provided a comprehensive examination of planning approaches, with a particular emphasis on forward and backward search methods and the Fast Forward (FF) planning system.
+
+\section{Key Concepts}
+
+\subsection{Introduction to AI Planning}
+AI planning is a fundamental problem-solving approach in artificial intelligence that involves:
+\begin{itemize}
+    \item Deciding on a sequence of actions in advance
+    \item Transforming an initial state into a goal state
+    \item Enabling autonomous systems to make complex decisions
+\end{itemize}
+
+\subsection{Importance of AI Planning}
+The presentation highlighted the critical role of planning in:
+\begin{itemize}
+    \item Autonomous systems
+    \item Decision-making processes
+    \item Applications across various domains including:
+    \begin{itemize}
+        \item Robotics
+        \item Logistics
+        \item Game AI
+    \end{itemize}
+\end{itemize}
+
+\subsection{State Space Representation}
+The core components of AI planning were identified as:
+\begin{itemize}
+    \item Initial State: The starting point
+    \item States: Descriptions of the world at a particular time
+    \item Actions: Operations that can change the state
+    \item Goal State: The desired final configuration
+\end{itemize}
+
+\section{Search Approaches}
+
+\subsection{Forward Search}
+Characteristics:
+\begin{itemize}
+    \item Starts from the initial state
+    \item Expands the graph by computing successors
+    \item Computes resulting states using applicable actions
+    \item Challenges include dealing with a large number of irrelevant actions
+\end{itemize}
+
+\subsection{Backward Search}
+Key features:
+\begin{itemize}
+    \item Begins with the goal state
+    \item Expands the graph by computing parents
+    \item Uses regression to determine previous state conditions
+    \item Reduces issues with irrelevant actions
+\end{itemize}
+
+\section{Fast Forward (FF) Planning System}
+
+\subsection{Unique Approach}
+The FF system introduces innovative planning strategies:
+\begin{itemize}
+    \item Heuristic method using relaxed planning graph
+    \item Enforced hill climbing search method
+    \item Intelligent action ordering
+\end{itemize}
+
+\subsection{Relaxed Planning Graph}
+Distinctive characteristics:
+\begin{itemize}
+    \item Removes deleted lists of actions
+    \item Expands graph until all goals are contained
+    \item Eliminates mutexes for simplified planning
+\end{itemize}
+
+\subsection{Heuristic Computation}
+\begin{itemize}
+    \item Estimates solution length
+    \item Computed in polynomial time
+    \item Admissible heuristic based on positive state facts
+\end{itemize}
+
+\subsection{Enforced Hill Climbing}
+Unique features:
+\begin{itemize}
+    \item Evaluates all successors
+    \item Performs breadth-first search when no better heuristic is found
+    \item Effectively navigates plateaus and local minima
+\end{itemize}
+
+\section{Performance and Significance}
+\begin{itemize}
+    \item Demonstrated success in the AIPS-2000 planning competition
+    \item Provides an innovative approach to automated reasoning
+    \item Showcases how intelligent heuristics can optimize planning processes
+\end{itemize}
+
+\section{Conclusion}
+The seminar presented a deep dive into AI planning algorithms, emphasizing the complexity and sophistication of state space search techniques. The Fast Forward system, in particular, was highlighted as a significant advancement in automated planning research.
+
+\section{Recommendations for Further Study}
+\begin{itemize}
+    \item Explore implementation details of the FF planning system
+    \item Investigate applications in more complex real-world scenarios
+    \item Compare FF with other planning algorithms
+\end{itemize}
+
+\end{document}
